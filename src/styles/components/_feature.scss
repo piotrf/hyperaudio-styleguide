@@ -46,42 +46,33 @@
 /* Queries
 ----------------------------------------------- */
 
-@media #{$small-up} {
+.feature-figure {
+  margin-bottom: $space-m;
+}
+.feature-heading {
+  font-size: $font-l;
+  margin-top: $space-m;
+  margin-bottom: $space-m;
+}
+.feature-text {
+  display: block;
+  font-size: $font-m;
+  line-height: $lheight-m;
+  margin-bottom: 0;
+}
+.feature-call {
+  display: inline-block;
+  font-size: $font-s;
+  font-weight: normal;
+  margin-top: $space-m;
+}
+.feature.odd {
   .feature-figure {
-    margin-bottom: $space-m;
+    margin-right: $space-m;
   }
-  .feature-heading {
-    font-size: $font-l;
-    margin-top: $space-m;
-    margin-bottom: $space-m;
-  }
-  .feature-text {
-    display: block;
-    font-size: $font-m;
-    line-height: $lheight-m;
-    margin-bottom: 0;
-  }
-  .feature-call {
-    display: inline-block;
-    font-size: $font-s;
-    font-weight: normal;
-    margin-top: $space-m;
-  }
-  .feature.odd {
-    .feature-figure {
-      margin-right: $space-m;
-    }
-  }
-  .feature.even {
-    .feature-figure {
-      margin-left: $space-m;
-    }
-  }
-
 }
-
-@media #{$medium-up} {
-}
-
-@media #{$large-up} {
+.feature.even {
+  .feature-figure {
+    margin-left: $space-m;
+  }
 }

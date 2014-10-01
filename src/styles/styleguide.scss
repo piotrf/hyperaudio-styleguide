@@ -4,9 +4,6 @@
 ------------------------------------------- */
 @import "bourbon";
 
-/* Import Bower-driven Vendor Modules
-------------------------------------------- */
-
 /* Import Other External Assets
 ------------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Exo+2:400,700,400italic);
@@ -20,49 +17,72 @@
 ------------------------------------------- */
 @import "config";
 
-/* Styleguide Styles
-------------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* Style-Guide Styles
+/* ---------------------------------------- */
+/* ---------------------------------------- */
 
-.tpl_sg > section {
-  padding: $space-h 0;
+$space: $space-m;
+
+.tpl_sg {
+  padding-bottom: $space-h;
+}
+.sg-wrap {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
-.sg-container {
-  padding: 0 $space-s;
+/* Header
+/* ---------------------------------------- */
+.sg-header {
+  border-bottom: 1px solid $mono-HL;
+  margin-bottom: $space;
+  padding-top: $space;
+  padding-bottom: $space;
+  * {
+    line-height: 40px;
+  }
+}
+.sg-header__brandmark {
+  font-size: $font-l;
+}
+.sg-header__nav {
+  @include position-top-right(0,0);
 }
 
-// Navigation
+/* Navigation
+/* ---------------------------------------- */
 .sg-nav {
-  color: $mono-light;
   list-style: decimal;
-  margin-bottom: $space-l;
+  margin-bottom: $space;
 }
-.sg-nav-item {
+.sg-nav__item {
   display: block;
 }
-.sg-nav-separator {
-  border-bottom: 1px solid $light;
-}
-.sg-nav-link {
-  display: block !important;
+.sg-nav__link.sg-nav__link {
+  display: block;
   margin-left: $space-x;
   padding: $space-s 0;
-  border-bottom: 1px solid $light !important;
+  border-bottom: 1px solid $mono-HL;
   &:hover,
   &.active {
-    color: $mono-strong;
+    color: $mono-D;
   }
 }
 
-// Module
+/* Modules
+/* ---------------------------------------- */
+
 .sg-mod {
   position: relative;
-  margin-bottom: $space-l;
+  margin-bottom: $space;
 }
 .sg-mod-heading {
-  margin-top: 0;
-  padding: 0;
-  border-bottom: 1px solid $light;
+  margin-bottom: $space-m;
+  border-bottom: 1px solid $mono-HL;
   font-weight: bold;
   font-size: $font-l;
   line-height: $lheight-m;
@@ -70,9 +90,9 @@
     border-radius: $radius-s;
     @include position-top-right($space-x, 0);
     padding: $space-x $space-s;
-    border: 1px solid $light;
-    background: $bright;
-    color: $mono-mid;
+    border: 1px solid $mono-HL;
+    background: $mono-Wt;
+    color: $mono-M;
     font-size: $font-s;
     font-family: monospace;
     line-height: $lheight-xs;
@@ -93,10 +113,10 @@
   pre {
     border-radius: $radius-s;
     padding: $space-x $space-x;
-    border: 1px solid $light;
-    background: $bright;
-    color: $mono-mid;
-    font-size: $font-m;
+    border: 1px solid $mono-HL;
+    background: $mono-Wt;
+    color: $mono-M;
+    font-size: $font-xs;
     font-family: monospace;
     line-height: $lheight-m;
   }
@@ -110,7 +130,7 @@
     margin-left: ($space-m - 2px);
   }
   iframe {
-    border: 1px solid $light;
+    border: 1px solid $mono-HL;
     &::-webkit-scrollbar {
       -webkit-appearance: none;
     }
@@ -125,8 +145,8 @@
   }
   figure {
     border-radius: $radius-s;
-    border: 1px solid $light;
-    background: $bright;
+    border: 1px solid $mono-HL;
+    background: $mono-Wt;
     font-family: monospace;
     line-height: $lheight-xs;
     margin-top: $space-m;
@@ -142,10 +162,10 @@
   code {
     border-radius: $radius-s;
     padding: $space-x $space-x;
-    border: 1px solid $light;
-    background: $bright;
-    color: $mono-mid;
-    font-size: $font-s;
+    border: 1px solid $mono-HL;
+    background: $mono-Wt;
+    color: $mono-M;
+    font-size: $font-xs;
     font-family: monospace;
     line-height: $lheight-xs;
   }
@@ -153,16 +173,16 @@
 .sg-mod-canvas {
   margin-top: $space-m;
   padding: $space-m;
-  border: 1px solid $light;
+  border: 1px solid $mono-HL;
   background: image-url("backgrounds/sg-grid.png") repeat;
   position: relative;
 }
 .sg-mod-canvas-note {
   @include position-top-left(-($space-s), $space-m);
   border-radius: $radius-s;
-  background: $bright;
-  border: 1px solid $light;
-  color: $mono-mid;
+  background: $mono-Wt;
+  border: 1px solid $mono-HL;
+  color: $mono-M;
   font-family: $primary-font;
   font-size: $font-xs;
   font-weight: normal;

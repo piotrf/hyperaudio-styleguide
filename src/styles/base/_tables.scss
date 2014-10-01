@@ -6,7 +6,7 @@ table {
   table-layout: fixed;
   width: 100%;
   caption {
-    color: $mono-mid;
+    color: $mono-M;
     font-size: $font-m;
     font-weight: bold;
     line-height: $lheight-s;
@@ -39,7 +39,7 @@ tr {
 }
 td,
 th {
-  border-bottom: 1px solid $light;
+  border-bottom: 1px solid $mono-HL;
   font-size: $font-s;
   line-height: $lheight-s;
   padding: $space-s;

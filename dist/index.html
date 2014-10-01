@@ -4,58 +4,46 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width">
-    <title>Hyperaudio Styleguide | Home</title>
+    <title>Hyperaudio Styleguide | Intro</title>
     <link href="assets/styles/styleguide.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="assets/styles/main.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/styles/ha-global.css" media="all" rel="stylesheet" type="text/css" />
     <link href="assets/images/inserts/favicon.ico" rel="icon" type="image/x-icon" >
   </head>
-
-  <body class="tpl_sg index">
-    <header class="header branded">
-      <div class="container row">
-        <div class="small-12 large-4 medium-3 columns">
-          <h1 class="header-brandmark">
-            <a class="brandmark" href="index.html">
-              <span data-picture class="brandmark-symbol">
-                <span data-src="assets/images/inserts/logo-hyperaudio.png"></span>
-                <span data-src="assets/images/inserts/logo-hyperaudio@2x.png" data-media="(-webkit-min-device-pixel-ratio:2)"></span>
-                <span data-src="assets/images/inserts/logo-hyperaudio@2x.png" data-media="(min-resolution: 192dpi)"></span>
-              </span>
-              <span class="brandmark-label">Hyperaudio Styleguide</span>
-            </a>
-          </h1>
-        </div>
-        <div class="small-12 large-8 medium-9 columns">
-          <ul class="header-navigation">
-            <li class="header-navigation-item"><a href="../" class="button small">Back to site</a></li>
+  <body class="tpl_sg">
+    <header class="sg-header">
+      <div class="sg-wrap">
+        <div class="group">
+          <h1 class="sg-header__brandmark">Hyperaudio Styleguide</h1>
+          <ul class="sg-header__nav">
+            <li class="sg-header__nav-item"><a href="../" class="button small">Back to site</a></li>
           </ul>
         </div>
       </div>
     </header>
-    <section class="section">
+    <section class="sg-wrap">
       <div class="container">
-        <div class="row">
-          <div class="large-3 medium-3 small-12 columns">
-            <ol class="sg-nav">
-              <li class="sg-nav-item"><a class="sg-nav-link active" href="index.html">Intro</a></li>
-              <li class="sg-nav-item"><a class="sg-nav-link" href="grid.html">Grid</a></li>
-              <li class="sg-nav-item"><a class="sg-nav-link" href="typography.html">Typography</a></li>
-              <li class="sg-nav-item"><a class="sg-nav-link" href="links-and-buttons.html">Links and Buttons</a></li>
-              <li class="sg-nav-item"><a class="sg-nav-link" href="icons.html">Icons</a></li>
-              <li class="sg-nav-item"><a class="sg-nav-link" href="forms.html">Forms</a></li>
-              <li class="sg-nav-item"><a class="sg-nav-link" href="components.html">Components</a></li>
-              <li class="sg-nav-item"><a class="sg-nav-link" href="combos.html">Combos</a></li>
-              <li class="sg-nav-item"><a class="sg-nav-link" href="extensions.html">Extensions</a></li>
-              <li class="sg-nav-item"><a class="sg-nav-link" href="assets.html">Assets</a></li>
+        <div class="group">
+          <div class="s-span-1of1 m-span-1of4">
+            <ol class="sg-nav m-prl">
+              <li class="sg-nav__item"><a class="sg-nav__link active" href="index.html">Intro</a></li>
+              <li class="sg-nav__item"><a class="sg-nav__link" href="grid.html">Grid</a></li>
+              <li class="sg-nav__item"><a class="sg-nav__link" href="typography.html">Typography</a></li>
+              <li class="sg-nav__item"><a class="sg-nav__link" href="links-and-buttons.html">Links and Buttons</a></li>
+              <li class="sg-nav__item"><a class="sg-nav__link" href="icons.html">Icons</a></li>
+              <li class="sg-nav__item"><a class="sg-nav__link" href="forms.html">Forms</a></li>
+              <li class="sg-nav__item"><a class="sg-nav__link" href="components.html">Components</a></li>
+              <li class="sg-nav__item"><a class="sg-nav__link" href="combos.html">Combos</a></li>
+              <li class="sg-nav__item"><a class="sg-nav__link" href="extensions.html">Extensions</a></li>
+              <li class="sg-nav__item"><a class="sg-nav__link" href="assets.html">Assets</a></li>
             </ol>
           </div>
-          <div class="large-9 medium-9 small-12 columns">
+          <div class="s-span-1of1 m-span-3of4">
             <div class="sg-mod">
               <h2 class="sg-mod-heading">Meet the Styleguide.</h2>
               <div class="sg-mod-intro">
-                <p>Welcome to the Hyperaudio Styleguide (later called HS). The purpouse of this styleguide is to document all, even tiniest, elements of Hyperaudio’s user interface. HS is divided in clearly defined chapters listed on the left hand side.</p>
-                <p>HS requires Hyperaudio base stylesheet, hence all that works within the HS will work on the site or any of the apps as well (and vice-versa).</p>
-                <p>Modules documented in the HS (especially components and combos) are build with flexibility in mind, hence they will adapt to the bounding box. For that it is important to keep the layout classes and presentational classes separated. More on that in the <a href="grid.html">Grid</a> section.</p>
+                <p>Welcome to the Hyperaudio Styleguide. The purpouse of this styleguide is to document all, even tiniest, elements of Hyperaudio’s user interface.</p>
+                <p>Styleguide requires Hyperaudio base stylesheet, hence all that works within the Styleguide will work on the site or any of the apps as well.</p>
+                <p>Modules documented in the Styleguide (especially components and combos) are build with flexibility in mind, hence they will adapt to the bounding box. For that it is important to keep the layout classes and presentational classes separated. More on that in the <a href="grid.html">Grid</a> section.</p>
               </div>
             </div>
 
@@ -66,7 +54,7 @@
             <div class="sg-mod">
               <h2 class="sg-mod-heading">Dependecies.</h2>
               <div class="sg-mod-intro">
-                <p>Hyperaudio UI architecture depends principally on <a href="http://compass-style.org/">Compass</a> for stylesheet automation and compilation. <a href="http://bower.io/">Bower</a> instead is used to manage vendor frameworks (<a href="http://foundation.zurb.com/">Foundation</a>), libraries (<a href="http://jquery.com">jQuery</a>) and other plugins (<a href="http://jquery.malsup.com/cycle2/">jquery.cycle2.js</a>).</p>
+                <p>Hyperaudio UI architecture depends principally on a few Node Modules used for CSS compilation and Bower which is used to handle dependencies.</p>
               </div>
             </div>
 
@@ -78,11 +66,10 @@
               <h2 class="sg-mod-heading">Running the thing.</h2>
               <div class="sg-mod-intro">
                 <pre>
-$ gem install compass
-$ npm install -g bower
-$ cd project_dir
+$ cd directory
+$ npm install
 $ bower install
-$ compass watch</pre>
+$ gulp</pre>
               </div>
             </div>
 
@@ -93,21 +80,7 @@ $ compass watch</pre>
             <div class="sg-mod">
               <h2 class="sg-mod-heading">Stylesheet architecture.</h2>
               <div class="sg-mod-intro">
-                <p>Whenever any style changes are required, enter project directory, follow instructions found above (Running the thing) and make necessary edits in the <code>/assets/stylesheets/sass</code> directory. CSS files will automagically be compiled and minimized.</p> <!-- extend -->
-              </div>
-            </div>
-
-            <!-- ##### ##### ##### #####
-                 ##### ##### ##### #####
-                 ##### ##### ##### ##### -->
-
-            <div class="sg-mod">
-              <h2 class="sg-mod-heading">Site vs. Apps.</h2>
-              <div class="sg-mod-intro">
-                <p>Site’s and apps’ <code>body</code> use context classes for any differentiations when needed:</p>
-                <pre>
-body.tpl_sg - for all 'static' pages of the site, including blog and posts
-body.tpl_app - for all apps, pad, maker, cleaner and converter</pre>
+                <p>Whenever any style changes are required, enter project directory, follow instructions found above (Running the thing) and make necessary edits in the <code>/src/styles</code> directory. CSS files will automagically be compiled and minimized.</p>
               </div>
             </div>
 
@@ -121,6 +94,11 @@ body.tpl_app - for all apps, pad, maker, cleaner and converter</pre>
                 <p>And nobody will record you while you snore.</p>
               </div>
             </div>
+
+            <!-- ##### ##### ##### #####
+                 ##### ##### ##### #####
+                 ##### ##### ##### ##### -->
+
           </div>
         </div>
       </div>

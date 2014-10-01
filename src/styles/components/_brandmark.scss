@@ -12,7 +12,7 @@
 .brandmark-symbol {
   border-radius: $radius-s;
   box-shadow: 0 1px 1px $shadow-light;
-  background: $bright;
+  background: $mono-Wt;
   float: left;
   padding: $space-x 2px;
   text-align: center;
@@ -32,14 +32,6 @@
   margin-left: $space-s;
 }
 
-@media #{$small-up} {
-  .brandmark {
-    text-align: left;
-  }
-}
-
-@media #{$medium-up} {
-}
-
-@media #{$large-up} {
+.brandmark {
+  text-align: left;
 }

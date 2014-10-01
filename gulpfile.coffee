@@ -25,7 +25,7 @@ gulp.task "compile-sass", ->
       'bower_components'
       ])
     .on "error", handleError
-    .pipe gulp.dest "dist/styles"
+    .pipe gulp.dest "dist/assets/styles"
     .pipe $.connect.reload()
 
 # Concat Vendor

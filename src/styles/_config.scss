@@ -1,20 +1,19 @@
 /* Colour Palette
 ----------------------------------------------- */
 
-$block-grid-elements: 12;
-$block-grid-default-spacing: rem-calc(40);
 
-// Shades of Grey
-$dark              : #000;
-$bright            : #fff;
+// Monochrome
+// $mono-Blk
+// $mono-LD
+$mono-D            : rgba(0,0,0,0.77);
+// $mono-HD
+$mono-M            : rgba(0,0,0,0.55);
+// $mono-LLt
+$mono-Lt           : rgba(0,0,0,0.35);
+$mono-HL           : rgba(0,0,0,0.04);
+$mono-Wt           : #fff;
 
-$heavy             : rgba(0,0,0,0.88);
-$mono-heavy        : rgba(0,0,0,0.77);
-$mono-strong       : rgba(0,0,0,0.66);
-$mono-mid          : rgba(0,0,0,0.55);
-$mono-weak         : rgba(0,0,0,0.35);
-$mono-light        : rgba(0,0,0,0.20);
-$light             : rgba(0,0,0,0.04);
+
 
 // Rainbow
 
@@ -48,7 +47,6 @@ $secondary-font    : 'Exo 2', sans-serif;
 // Font Sizes
 $font-h            : 35px; // humongous
 $font-t            : 10px; // tiny
-
 $font-xl           : 35px;
 $font-l            : 25px;
 $font-m            : 17px;
@@ -79,8 +77,8 @@ $radius-s          : 3px;
 
 /* Default definitions
 ----------------------------------------------- */
-$dflt-background  : $bright;
-$dflt-color       : $mono-strong;
+$dflt-background  : $mono-Wt;
+$dflt-color       : $mono-D;
 $dflt-font        : $primary-font;
 $dflt-font-size   : $font-s;
 $dflt-line-height : $lheight-s;

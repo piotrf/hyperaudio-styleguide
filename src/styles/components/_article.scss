@@ -8,13 +8,14 @@
   margin-bottom: $space-l;
 }
 .article-heading {
-  color: $mono-weak;
-  font-size: $font-m;
+  color: $mono-Lt;
+  font-size: $font-s;
   margin-bottom: $space-m;
   text-align: center;
 }
 .article-title {
   @extend .heading-xl;
+  font-size: ($font-m + 5px);
   margin: 0 $space-s $space-m;
   text-align: center;
   text-transform: none;
@@ -23,7 +24,7 @@
   }
 }
 .article-meta {
-  color: $mono-weak;
+  color: $mono-Lt;
   display: block;
   font-size: $font-s;
   font-style: italic;
@@ -32,7 +33,7 @@
 .article-date {
 }
 .article-author {
-  color: $mono-weak;
+  color: $mono-Lt;
   font-size: $font-s;
   font-style: italic;
 }
@@ -43,7 +44,7 @@
   blockquote {
     font-style: italic;
     margin: $space-l;
-    color: $mono-mid;
+    color: $mono-M;
     &:before {
       content: "“";
     }
@@ -62,7 +63,7 @@
     white-space: pre-wrap;
   }
   figure {
-    border: 1px solid $light;
+    border: 1px solid $mono-HL;
     margin-bottom: $space-m;
     padding: $space-s;
     text-align: center;
@@ -77,7 +78,7 @@
       width: 100%;
     }
     figcaption {
-      color: $mono-mid;
+      color: $mono-M;
       font-size: $font-s;
       line-height: $lheight-s;
       margin-top: $space-s;
@@ -96,17 +97,11 @@
   }
 }
 
-@media #{$small-only} {
+@include breakpoint(m) {
   .article-heading {
-    font-size: $font-s;
+    font-size: $font-m;
   }
   .article-title {
-    font-size: ($font-m + 5px);
+    @extend .heading-xl;
   }
-}
-
-@media #{$medium-only} {
-}
-
-@media #{$large-up} {
 }

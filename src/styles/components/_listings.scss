@@ -21,7 +21,7 @@
   text-align: left;
 }
 .listing-meta {
-  color: $mono-weak;
+  color: $mono-Lt;
   display: block;
   float: left;
   margin-top: $space-x;
@@ -30,10 +30,8 @@
   text-align: left;
 }
 
-/* Queries
------------------------------------------------ */
 
-@media #{$small-only} {
+@include breakpoint(m) {
   .listing-item {
     margin-top: $space-l;
     &:first-child {
@@ -41,16 +39,3 @@
     }
   }
 }
-
-@media #{$medium-only} {
-  .listing-item {
-    margin-top: $space-l;
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-}
-
-@media #{$large-up} {
-}
-

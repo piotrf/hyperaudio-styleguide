@@ -20,8 +20,6 @@
     "tests"
   ],
   "dependencies": {
-  },
-  "devDependencies": {
-    "foundation": "~5.4.4"
+    "catalyst": "https://github.com/interactivethings/catalyst.git#1.0.0-beta2"
   }
 }

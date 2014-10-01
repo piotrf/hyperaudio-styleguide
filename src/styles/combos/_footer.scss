@@ -35,7 +35,7 @@
 // Imprint
 
 .footer-imprint {
-  color: $mono-weak;
+  color: $mono-Lt;
   margin-top: $space-h;
   margin-bottom: $space-h;
   text-align: center;
@@ -52,7 +52,7 @@
 /* Queries
 ----------------------------------------------- */
 
-@media #{$small-only} {
+
   .lt_footer {
     margin-top: $space-l;
   }
@@ -77,9 +77,8 @@
       display: inline;
     }
   }
-}
 
-@media #{$medium-only} {
+@include breakpoint(m) {
   .lt_footer {
     margin-top: $space-l;
   }
@@ -102,7 +101,4 @@
       display: inline;
     }
   }
-}
-
-@media #{$large-only} {
 }

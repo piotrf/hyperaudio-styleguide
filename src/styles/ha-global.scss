@@ -3,16 +3,7 @@
 /* Import Gem-based Base Frameworks
 ----------------------------------------------- */
 @import "bourbon";
-
-/* Import Bower-driven Vendor Modules
------------------------------------------------ */
-@import "foundation/scss/normalize";
-
-@import "foundation/scss/foundation/components/global";
-@import "foundation/scss/foundation/components/grid";
-@import "foundation/scss/foundation/components/block-grid";
-@import "foundation/scss/foundation/components/reveal";
-@import "foundation/scss/foundation/components/tooltips";
+@import "catalyst/src/catalyst";
 
 /* Import Other External Assets
 ----------------------------------------------- */
@@ -57,7 +48,6 @@
 @import "components/section-head";
 @import "components/selects";
 @import "components/separator";
-@import "components/slider";
 @import "components/supporter";
 
 /* Import Combos
@@ -69,7 +59,6 @@
 
 /* Import Layout Styles
 ----------------------------------------------- */
-@import "layout";
 
 /* Import Extensions
 ----------------------------------------------- */

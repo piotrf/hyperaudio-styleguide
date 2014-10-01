@@ -7,7 +7,7 @@
   margin-top: $space-h;
 }
 .characteristic-heading {
-  color: $mono-mid;
+  color: $mono-M;
   font-size: $font-s;
   // text-align: center;
   letter-spacing: 0.2em;
@@ -19,7 +19,7 @@
   margin: 0;
 }
 .characteristic-detail {
-  color: $mono-mid;
+  color: $mono-M;
 }
 .characteristic-figure {
   border-radius: $radius-s;
@@ -29,16 +29,4 @@
 }
 .characteristic-image {
   line-height: 0;
-}
-
-/* Queries
------------------------------------------------ */
-
-@media #{$small-up} {
-}
-
-@media #{$medium-up} {
-}
-
-@media #{$large-up} {
 }

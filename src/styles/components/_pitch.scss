@@ -18,20 +18,12 @@
 /* Queries
 ----------------------------------------------- */
 
-@media #{$small-up} {
-  .pitch-heading {
-    display: block;
-    font-size: $font-h;
-  }
-  .pitch-text {
-    font-weight: normal;
-    display: inline;
-    font-size: $font-l;
-  }
+.pitch-heading {
+  display: block;
+  font-size: $font-h;
 }
-
-@media #{$medium-up} {
-}
-
-@media #{$large-up} {
+.pitch-text {
+  font-weight: normal;
+  display: inline;
+  font-size: $font-l;
 }

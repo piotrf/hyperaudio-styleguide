@@ -3,37 +3,37 @@
 
 .branded {
   background: $brand-color;
-  color: $bright;
+  color: $mono-Wt;
   text-shadow: 0 1px 1px $shadow-weak;
   h1, h2, h3, h4, h5 {
-    color: $bright;
+    color: $mono-Wt;
   }
   a {
-    color: $bright;
+    color: $mono-Wt;
     &.active {
-      border-bottom-color: $bright;
+      border-bottom-color: $mono-Wt;
     }
   }
   .button {
     border-color: $brand-color-light;
-    color: $bright;
+    color: $mono-Wt;
     &:active,
     &.active {
-      background: $bright;
+      background: $mono-Wt;
       color: $brand-color;
-      border-color: $bright;
+      border-color: $mono-Wt;
       text-shadow: none;
     }
     &.active:hover,
     &:hover {
-      background: $bright;
-      border-color: $bright;
+      background: $mono-Wt;
+      border-color: $mono-Wt;
       color: $brand-color !important;
     }
   }
   .button.primary {
-    background: $bright;
-    border-color: $bright;
+    background: $mono-Wt;
+    border-color: $mono-Wt;
     color: $brand-color;
   }
 }

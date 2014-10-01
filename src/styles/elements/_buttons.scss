@@ -15,7 +15,7 @@ input[type="submit"] {
   padding: $space-x $space-s;
   &:hover {
     background: #2C3E50;
-    color: $bright !important;
+    color: $mono-Wt !important;
     text-shadow: none !important;
     // -webkit-transition: all 0.3s;
     // -moz-transition: all 0.3s;
@@ -35,7 +35,7 @@ input[type="submit"] {
 .button.primary {
   background: $alt-color;
   border-color: $alt-color;
-  color: $bright;
+  color: $mono-Wt;
   text-shadow: none;
 }
 
@@ -54,16 +54,4 @@ input[type="submit"] {
 .button.small {
   font-size: $font-xs;
   padding: $space-x $space-s;
-}
-
-/* Queries
------------------------------------------------ */
-
-@media #{$small-up} {
-}
-
-@media #{$medium-up} {
-}
-
-@media #{$large-up} {
 }

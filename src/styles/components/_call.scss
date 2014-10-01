@@ -5,7 +5,8 @@
   text-align: center;
 }
 .call-heading {
-  @extend .heading-l;
+  font-size: ($font-m + 5px);
+  padding: 0;
 }
 .call-text {
   font-weight: normal;
@@ -15,15 +16,8 @@
 /* Queries
 ----------------------------------------------- */
 
-@media #{$small-only} {
+@include breakpoint(m) {
   .call-heading {
-    font-size: ($font-m + 5px);
-    padding: 0;
+    @extend .heading-l;
   }
-}
-
-@media #{$medium-up} {
-}
-
-@media #{$large-up} {
 }

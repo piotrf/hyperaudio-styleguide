@@ -2,21 +2,21 @@
 ----------------------------------------------- */
 
 .supporters {
-  margin-top: $space-l;
-  text-align: center;
-  @media #{$small-only} {
-    margin-top: $space-m;
+  @include breakpoint(m) {
+    margin-top: $space-l;
   }
+  margin-top: $space-m;
+  text-align: center;
 }
 .supporter {
   border: none !important;
-  color: $mono-mid;
+  color: $mono-M;
   font-size: 80px;
-  margin: 0 $space-m;
+  margin: 0 $space-s;
   &:hover {
-    color: $mono-heavy;
+    color: $mono-D;
   }
-  @media #{$small-only} {
-    margin: 0 $space-s;
+  @include breakpoint(m) {
+    margin: 0 $space-m;
   }
 }

@@ -9,7 +9,7 @@
   margin-bottom: $space-s;
 }
 .endorsement-author {
-  color: $mono-weak;
+  color: $mono-Lt;
   display: inline-block;
   font-size: $font-xs;
   font-style: normal;
@@ -21,23 +21,8 @@
   font-weight: normal;
 }
 
-/* Queries
------------------------------------------------ */
-
-@media #{$small-only} {
-  .endorsement {
-    margin-bottom: $space-m;
-    &:last-child {
-      margin: 0;
-    }
-  }
-}
-
-@media #{$medium-up} {
+@include breakpoint(m) {
   .endorsement-quote {
     min-height: 154px;
   }
-}
-
-@media #{$large-up} {
 }

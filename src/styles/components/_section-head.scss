@@ -28,19 +28,18 @@
 /* Queries
 ----------------------------------------------- */
 
-@media #{$small-only} {
-  .section-head {
-    margin-bottom: $space-l;
-  }
-  .section-head-text {
-    margin-top: $space-s;
-  }
-  .section-head-figure {
-    margin-top: $space-m;
-  }
+
+.section-head {
+  margin-bottom: $space-l;
+}
+.section-head-text {
+  margin-top: $space-s;
+}
+.section-head-figure {
+  margin-top: $space-m;
 }
 
-@media #{$medium-only} {
+@include breakpoint(m) {
   .section-head {
     margin-bottom: $space-l;
   }
@@ -50,7 +49,4 @@
   .section-head-figure {
     margin-top: $space-l;
   }
-}
-
-@media #{$large-only} {
 }

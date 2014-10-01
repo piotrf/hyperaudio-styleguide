@@ -1,8 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Exo+2:400,700,400italic);
 /* Import Gem-based Base Frameworks
 ------------------------------------------- */
-/* Import Bower-driven Vendor Modules
-------------------------------------------- */
 /* Import Other External Assets
 ------------------------------------------- */
 /* Import Hyperaudio Library Mixins
@@ -23,40 +21,63 @@
 ----------------------------------------------- */
 /* Default definitions
 ----------------------------------------------- */
-/* Styleguide Styles
-------------------------------------------- */
-.tpl_sg > section {
-  padding: 80px 0; }
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* Style-Guide Styles
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+.tpl_sg {
+  padding-bottom: 80px; }
 
-.sg-container {
-  padding: 0 10px; }
+.sg-wrap {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
 
+/* Header
+/* ---------------------------------------- */
+.sg-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .sg-header * {
+    line-height: 40px; }
+
+.sg-header__brandmark {
+  font-size: 25px; }
+
+.sg-header__nav {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+/* Navigation
+/* ---------------------------------------- */
 .sg-nav {
-  color: rgba(0, 0, 0, 0.2);
   list-style: decimal;
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
 
-.sg-nav-item {
+.sg-nav__item {
   display: block; }
 
-.sg-nav-separator {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04); }
-
-.sg-nav-link {
-  display: block !important;
+.sg-nav__link.sg-nav__link {
+  display: block;
   margin-left: 5px;
   padding: 10px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04) !important; }
-  .sg-nav-link:hover, .sg-nav-link.active {
-    color: rgba(0, 0, 0, 0.66); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04); }
+  .sg-nav__link.sg-nav__link:hover, .sg-nav__link.sg-nav__link.active {
+    color: rgba(0, 0, 0, 0.77); }
 
+/* Modules
+/* ---------------------------------------- */
 .sg-mod {
   position: relative;
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
 
 .sg-mod-heading {
-  margin-top: 0;
-  padding: 0;
+  margin-bottom: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
   font-weight: bold;
   font-size: 25px;
@@ -86,7 +107,7 @@
   border: 1px solid rgba(0, 0, 0, 0.04);
   background: #fff;
   color: rgba(0, 0, 0, 0.55);
-  font-size: 17px;
+  font-size: 15px;
   font-family: monospace;
   line-height: 1.5em; }
 .sg-mod-intro li {
@@ -121,7 +142,7 @@
   border: 1px solid rgba(0, 0, 0, 0.04);
   background: #fff;
   color: rgba(0, 0, 0, 0.55);
-  font-size: 16px;
+  font-size: 15px;
   font-family: monospace;
   line-height: 1.2em; }
 
