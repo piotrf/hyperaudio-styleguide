@@ -1,4 +1,4 @@
-Hyperaudio Pad and Viewer, mobile to desktop friendly
+Hyperaudio Echosystem Styleguide
 ======================================
 
 # Setting up the thing.
@@ -27,4 +27,4 @@ Hyperaudio Pad and Viewer, mobile to desktop friendly
     $ gulp
 ```
 
-Open http://localhost:8001/ in the browser.
+Open http://localhost:8003/ in the browser.
