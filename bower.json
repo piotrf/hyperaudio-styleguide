@@ -15,7 +15,8 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "dist/assets/downloads/",
+    "dist/assets/downloads/**/*",
+    "dist/assets/downloads",
     "test",
     "tests"
   ],
