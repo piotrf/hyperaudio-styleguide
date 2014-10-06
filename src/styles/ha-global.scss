@@ -8,6 +8,8 @@
 /* Import Other External Assets
 ----------------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Exo+2:400,700,400italic);
+@import url(../fonts/hyperaudio/style.css);
+@import url(../fonts/hyperaudio-player/style.css);
 
 /* Import Hyperaudio Library Mixins
 ----------------------------------------------- */
@@ -56,12 +58,6 @@
 @import "combos/footer";
 @import "combos/header";
 @import "combos/tour";
-
-/* Import Layout Styles
------------------------------------------------ */
-
-/* Import Extensions
------------------------------------------------ */
 
 /* Import Playground
 ----------------------------------------------- */
